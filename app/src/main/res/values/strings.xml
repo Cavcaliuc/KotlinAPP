@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="todo">Admin</string>
+    <string name="searchAccount">Search</string>
+    <string name="Thelist">The list</string>
+    <string name="add_account">Add account</string>
+    <string name="login">Login</string>
+    <string name="login1">Login</string>
+    <string name="don_t_have_an_account_nclick_to_register">Don\'t have an Account?\nClick to Register</string>
+    <string name="password">password</string>
+    <string name="email">email</string>
+    <string name="Admin">Admin</string>
+    <string name="User">User</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="school">school</string>
+    <string name="name">name</string>
+    <string name="already_have_an_account_nclick_to_login">Already have an Account?\nClick to Login</string>
+    <string name="password1">password</string>
+    <string name="email1">email</string>
+    <string name="sign_up1">Sign Up</string>
+
+
+</resources>
