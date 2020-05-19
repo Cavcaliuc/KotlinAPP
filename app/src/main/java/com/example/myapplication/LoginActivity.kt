@@ -21,12 +21,6 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        val buttonRegister = findViewById<Button>(R.id.clickREG)
-        buttonRegister.setOnClickListener {
-            val intent = Intent(this, SignUPActivity::class.java)
-
-            startActivity(intent)
-        }
 
         var email = findViewById<EditText>(R.id.editEmail)
         var pass = findViewById<EditText>(R.id.editPass)
