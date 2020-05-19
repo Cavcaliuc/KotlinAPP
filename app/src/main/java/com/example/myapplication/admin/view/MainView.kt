@@ -47,6 +47,7 @@ class MainView : AppCompatActivity() {
             val intent = Intent(this, AccountDetailsView::class.java)
             intent.putExtra("token", token)
             intent.putExtra("user_id", element.toString())
+            finish()
             startActivity(intent)
         }
 
