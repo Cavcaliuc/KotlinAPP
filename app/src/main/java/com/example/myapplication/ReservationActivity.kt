@@ -1,9 +1,11 @@
 package com.example.myapplication
 
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class RezervationActivity : AppCompatActivity() {
+
+class ReservationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -11,4 +13,5 @@ class RezervationActivity : AppCompatActivity() {
 
 
     }
+
 }
