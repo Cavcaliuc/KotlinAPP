@@ -53,6 +53,7 @@ class AccountDetailsView : AppCompatActivity() {
             val intent = Intent(this, AddPlateView::class.java)
             intent.putExtra("token", token)
             intent.putExtra("user_id", userId)
+            finish()
             startActivity(intent)
         }
     }
