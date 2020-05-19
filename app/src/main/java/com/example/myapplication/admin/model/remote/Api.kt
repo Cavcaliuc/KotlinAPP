@@ -1,18 +1,12 @@
 package com.example.myapplication.admin.model.remote
 
-import com.example.myapplication.admin.model.data.AddUser
-import com.example.myapplication.admin.model.data.AddUserCar
-import com.example.myapplication.admin.model.data.AdminAccountList
-import com.example.myapplication.admin.model.data.Login
+import com.example.myapplication.admin.model.data.*
 import com.example.myapplication.services.request.LoginRequest
 import com.example.myapplication.services.response.BaseResponse
 import com.example.myapplication.services.response.LoginResponse
 import com.google.gson.JsonElement
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.Header
-import retrofit2.http.POST
+import retrofit2.http.*
 
 interface Api{
     @GET("/userList")
@@ -36,4 +30,10 @@ interface Api{
         @Header("X-Auth-Token") token: String,
         @Body body: JsonElement
     ): AddUserCar
+
+    @GET("/cars/{id}")
+    suspend fun getPlateDetails(
+        @Header("X-Auth-Token") token: String,
+        @Path("id") id: String
+    ): GetPlateDetails
 }
