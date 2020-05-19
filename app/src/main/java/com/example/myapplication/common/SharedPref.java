@@ -47,4 +47,5 @@ public class SharedPref {
     public static void putToken(String token) {
         putString("X-Auth-Token", token);
     }
+
 }

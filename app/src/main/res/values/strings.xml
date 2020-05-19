@@ -10,15 +10,10 @@
     <string name="email">email</string>
     <string name="Admin">Admin</string>
     <string name="User">User</string>
-    <string name="sign_up">Sign Up</string>
-    <string name="school">school</string>
-    <string name="name">name</string>
-    <string name="already_have_an_account">Already have an Account?</string>
     <string name="password1">password</string>
     <string name="email1">email</string>
     <string name="sign_up1">Sign Up</string>
     <string name="Code">Code</string>
-    <string name="click_to_login">Click to Login</string>
     <string name="basic">Basic</string>
     <string name="plateNr">Plate Nr</string>
     <string name="technical">Technical Details</string>
@@ -28,7 +23,7 @@
     <string name="carColor">COLOR</string>
     <string name="plate_number">Plate Number</string>
     <string name="edit_plate">EDIT PLATE</string>
-    <string name="click_up_to_edit">Click up to edit</string>
+    <string name="click_up_to_edit">Click to edit</string>
     <string name="delete_plate">DELETE PLATE</string>
     <string name="details_technical_passport">DETAILS (TECHNICAL PASSPORT…)</string>
     <string name="spaces">0/100\nSpaces</string>

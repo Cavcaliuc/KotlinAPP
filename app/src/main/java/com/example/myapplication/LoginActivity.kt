@@ -45,7 +45,7 @@ class LoginActivity : AppCompatActivity() {
     @Subscribe(threadMode = ThreadMode.MAIN)
     fun onEvent(event: LoginResponse) {
         SharedPref.putToken(event.token)
-        val intent = Intent(this, PageUser_Logged_Activity::class.java)
+        val intent = Intent(this, AdminActivity::class.java)
 
         startActivity(intent)
 

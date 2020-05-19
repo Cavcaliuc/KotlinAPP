@@ -3,7 +3,6 @@ package com.example.myapplication.services.request;
 public class LoginRequest {
     private String email;
     private String password;
-    private String name;
     private String code;
 
     public String getEmail() {
@@ -20,14 +19,6 @@ public class LoginRequest {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getCode() {

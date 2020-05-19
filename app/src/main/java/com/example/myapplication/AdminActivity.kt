@@ -7,10 +7,13 @@ import android.widget.Button
 import com.example.myapplication.R
 
 class AdminActivity : AppCompatActivity() {
+    private var socket: ConfirmationWebSocket? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin)
+
+        socket = ConfirmationWebSocket(this)
 
         val button4 = findViewById<Button>(R.id.addAccount)
 
@@ -19,6 +22,7 @@ class AdminActivity : AppCompatActivity() {
 
             startActivity(intent)
         }
+
 
     }
 }

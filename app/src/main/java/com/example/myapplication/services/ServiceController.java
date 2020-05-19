@@ -2,6 +2,7 @@ package com.example.myapplication.services;
 
 import androidx.annotation.NonNull;
 
+import com.example.myapplication.PlateActivity;
 import com.example.myapplication.services.request.LoginRequest;
 import com.example.myapplication.services.response.BaseResponse;
 import com.example.myapplication.services.response.LoginResponse;
@@ -83,4 +84,14 @@ public class ServiceController {
         Call<BaseResponse<LoginResponse>> request = getService().login(data);
         enqueue(request);
     }
+
+    public static void loginAdmin(LoginRequest data) {
+        Call<BaseResponse<LoginResponse>> request = getService().login(data);
+        enqueue(request);
+    }
+    public static void plate() {
+        Call<BaseResponse<LoginResponse>> request = getService().getPlate();
+        enqueue(request);
+    }
+
 }

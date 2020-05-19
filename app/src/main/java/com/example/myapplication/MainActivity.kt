@@ -17,15 +17,15 @@ class MainActivity : AppCompatActivity() {
         SharedPref.initInstance(this)
 
 
-        val button = findViewById<Button>(R.id.admin1)
-        button.setOnClickListener {
-            val intent = Intent(this, SignUPActivity::class.java)
+        val admin = findViewById<Button>(R.id.admin1)
+        admin.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
 
             startActivity(intent)
         }
 
-        val button1 = findViewById<Button>(R.id.user)
-        button1.setOnClickListener {
+        val user = findViewById<Button>(R.id.user)
+        user.setOnClickListener {
             val intent = Intent(this, UserActivity::class.java)
 
             startActivity(intent)
