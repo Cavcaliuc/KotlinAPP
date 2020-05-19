@@ -1,9 +1,6 @@
 package com.example.myapplication.admin.model.remote
 
-import com.example.myapplication.admin.model.data.AddUser
-import com.example.myapplication.admin.model.data.AddUserCar
-import com.example.myapplication.admin.model.data.AdminAccountList
-import com.example.myapplication.admin.model.data.Login
+import com.example.myapplication.admin.model.data.*
 import com.google.gson.JsonElement
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -34,6 +31,10 @@ class ApiImpl : Api{
 
     override suspend fun addUserCar(token: String, body: JsonElement): AddUserCar {
         return api.addUserCar(token, body)
+    }
+
+    override suspend fun getPlateDetails(token: String, id: String): GetPlateDetails {
+        return api.getPlateDetails(token, id)
     }
 
 }
