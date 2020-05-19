@@ -52,7 +52,6 @@
             android:drawablePadding="5dp"
             android:hint="@string/Code"
             android:importantForAutofill="no"
-            android:inputType="numberPassword"
             android:textAlignment="center" />
 
 

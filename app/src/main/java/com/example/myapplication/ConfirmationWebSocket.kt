@@ -20,7 +20,7 @@ class ConfirmationWebSocket(private val activity: Activity) {
                 override fun onTextReceived(message: String?) {
                     println("text received")
                     println(message)
-                    showDialog()
+                    showDialog(message!!)
                 }
             }
             webSocketClient?.addHeader("X-Auth-Token", SharedPref.getToken())
@@ -31,14 +31,14 @@ class ConfirmationWebSocket(private val activity: Activity) {
         }
     }
 
-    private fun showDialog() {
+    private fun showDialog(message: String) {
         activity.runOnUiThread {
             AlertDialog.Builder(activity)
                 .setTitle("Title")
                 .setMessage("Is the car at the barrier?")
                 .setPositiveButton("Yes") { dialog, whichButton ->
 
-                    webSocketClient?.send("OK")
+                    webSocketClient?.send(message)
 
                 }
                 .setNegativeButton("No") { dialog, whichButton ->

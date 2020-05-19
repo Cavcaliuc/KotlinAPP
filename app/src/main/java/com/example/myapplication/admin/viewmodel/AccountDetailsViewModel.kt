@@ -3,10 +3,8 @@ package com.example.myapplication.admin.viewmodel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.myapplication.admin.model.data.PlateData
-import com.example.myapplication.admin.model.data.UserData
-import com.example.myapplication.admin.model.remote.ApiImpl
-import com.example.myapplication.admin.utils.Components
+import com.example.myapplication.model.data.PlateData
+import com.example.myapplication.model.remote.ApiImpl
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

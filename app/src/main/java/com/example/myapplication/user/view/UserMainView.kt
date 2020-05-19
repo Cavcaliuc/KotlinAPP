@@ -1,12 +1,15 @@
-package com.example.myapplication
+package com.example.myapplication.user.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.myapplication.ConfirmationWebSocket
+import com.example.myapplication.R
+import com.example.myapplication.ReservationActivity
 
 
-class PageUser_Logged_Activity : AppCompatActivity() {
+class UserMainView : AppCompatActivity() {
     private var socket: ConfirmationWebSocket? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,10 +18,11 @@ class PageUser_Logged_Activity : AppCompatActivity() {
 
 
 
+
+        //click listeners
         val reserve = findViewById<Button>(R.id.reservePlace)
         reserve.setOnClickListener {
             val intent = Intent(this, ReservationActivity::class.java)
-
             startActivity(intent)
         }
 

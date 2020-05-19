@@ -2,10 +2,11 @@ package com.example.myapplication.services;
 
 import androidx.annotation.NonNull;
 
-import com.example.myapplication.PlateActivity;
+import com.example.myapplication.services.request.ListPlateRequest;
 import com.example.myapplication.services.request.LoginRequest;
 import com.example.myapplication.services.request.PlateRequest;
 import com.example.myapplication.services.response.BaseResponse;
+import com.example.myapplication.services.response.ListPlateResponse;
 import com.example.myapplication.services.response.LoginResponse;
 import com.example.myapplication.services.response.PlateResponse;
 
@@ -89,8 +90,13 @@ public class ServiceController {
 
 
     public static void plate(PlateRequest data) {
-        //Call<BaseResponse<PlateResponse>> request = getService().plate(data);
-       // enqueue(request);
+        Call<BaseResponse<PlateResponse>> request = getService().plate(data);
+       enqueue(request);
+    }
+
+    public static void listPlate(ListPlateRequest data) {
+        Call<BaseResponse<ListPlateResponse>> request = getService().listPlate(data);
+        enqueue(request);
     }
 
 }

@@ -5,12 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import com.example.myapplication.R
 import com.example.myapplication.common.SharedPref
 import com.example.myapplication.services.ServiceController
 import com.example.myapplication.services.request.LoginRequest
 import com.example.myapplication.services.response.LoginResponse
-import okhttp3.OkHttpClient
+import com.example.myapplication.user.view.UserMainView
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
@@ -44,7 +43,7 @@ class UserActivity : AppCompatActivity() {
     @Subscribe(threadMode = ThreadMode.MAIN)
     fun onEvent(event: LoginResponse) {
         SharedPref.putToken(event.token)
-        val intent = Intent(this, PageUser_Logged_Activity::class.java)
+        val intent = Intent(this, UserMainView::class.java)
 
         startActivity(intent)
 

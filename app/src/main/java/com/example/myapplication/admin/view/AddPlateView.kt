@@ -1,18 +1,12 @@
 package com.example.myapplication.admin.view
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import android.widget.Button
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.myapplication.PlateActivity
 import com.example.myapplication.R
 import com.example.myapplication.admin.viewmodel.AddPlateViewModel
-import com.example.myapplication.admin.viewmodel.MainViewModel
 import kotlinx.android.synthetic.main.activity_add_plate.*
-import kotlinx.android.synthetic.main.activity_admin.*
 
 class AddPlateView : AppCompatActivity() {
 
