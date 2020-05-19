@@ -40,7 +40,7 @@
         android:layout_below="@id/searchFilter"
         android:gravity="center"
         android:padding="10dp"
-        android:text="@string/Thelist"
+        android:text="@string/The_list"
         android:textColor="@color/black"
         android:textSize="20sp"
         />

@@ -2,9 +2,8 @@ package com.example.myapplication
 
 import android.app.Activity
 import android.app.AlertDialog
-import android.widget.Toast
+import com.example.myapplication.common.SharedPref
 import com.example.myapplication.consts.Consts
-import com.example.myapplication.consts.Session.JSESSIONID
 import com.example.myapplication.socket.CustomWebSocket
 import tech.gusavila92.websocketclient.WebSocketClient
 import java.net.URI
@@ -24,7 +23,7 @@ class ConfirmationWebSocket(private val activity: Activity) {
                     showDialog()
                 }
             }
-            webSocketClient?.addHeader("Cookie", "JSESSIONID=$JSESSIONID")
+            webSocketClient?.addHeader("X-Auth-Token", SharedPref.getToken())
             webSocketClient?.enableAutomaticReconnection(500)
             webSocketClient?.connect()
         } catch (e: URISyntaxException) {

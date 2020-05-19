@@ -10,7 +10,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".RezervationActivity"/>
+        <activity android:name=".PageUser_Logged_Activity" />
+        <activity android:name=".AccountActivity" />
+        <activity android:name=".PlateActivity" />
+        <activity android:name=".AddPlateActivity" />
         <activity android:name=".UserActivity" />
         <activity android:name=".SignUPActivity" />
         <activity android:name=".AdminActivity" />
