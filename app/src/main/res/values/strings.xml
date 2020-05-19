@@ -47,6 +47,7 @@
     <string name="edit_n_account">edit account</string>
     <string name="don_t_have_an_account">don\'t have an Account?</string>
     <string name="register_now">Click to Register</string>
+    <string name="back">Back</string>
 
 
 </resources>
