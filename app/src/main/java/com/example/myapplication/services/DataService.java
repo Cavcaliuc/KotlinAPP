@@ -1,6 +1,7 @@
 package com.example.myapplication.services;
 
 import com.example.myapplication.services.request.LoginRequest;
+import com.example.myapplication.services.request.PlateRequest;
 import com.example.myapplication.services.response.BaseResponse;
 import com.example.myapplication.services.response.LoginResponse;
 
@@ -16,7 +17,7 @@ public interface DataService {
 
     // get request
 //get plates
-    @GET("")
-    Call<BaseResponse<LoginResponse>> getPlate();
+   // @GET("/")
+    //Call<BaseResponse<PlateResponse>> plate(@Body PlateRequest r);
 
 }

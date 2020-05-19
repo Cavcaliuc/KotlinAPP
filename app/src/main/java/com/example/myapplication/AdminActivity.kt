@@ -16,7 +16,6 @@ class AdminActivity : AppCompatActivity() {
         socket = ConfirmationWebSocket(this)
 
         val button4 = findViewById<Button>(R.id.addAccount)
-
         button4.setOnClickListener {
             val intent = Intent(this, AddPlateActivity::class.java)
 

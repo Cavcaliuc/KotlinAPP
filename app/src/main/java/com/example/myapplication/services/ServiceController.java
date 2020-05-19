@@ -4,8 +4,10 @@ import androidx.annotation.NonNull;
 
 import com.example.myapplication.PlateActivity;
 import com.example.myapplication.services.request.LoginRequest;
+import com.example.myapplication.services.request.PlateRequest;
 import com.example.myapplication.services.response.BaseResponse;
 import com.example.myapplication.services.response.LoginResponse;
+import com.example.myapplication.services.response.PlateResponse;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -85,13 +87,10 @@ public class ServiceController {
         enqueue(request);
     }
 
-    public static void loginAdmin(LoginRequest data) {
-        Call<BaseResponse<LoginResponse>> request = getService().login(data);
-        enqueue(request);
-    }
-    public static void plate() {
-        Call<BaseResponse<LoginResponse>> request = getService().getPlate();
-        enqueue(request);
+
+    public static void plate(PlateRequest data) {
+        //Call<BaseResponse<PlateResponse>> request = getService().plate(data);
+       // enqueue(request);
     }
 
 }

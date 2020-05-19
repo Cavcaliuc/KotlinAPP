@@ -15,7 +15,7 @@
         android:layout_above="@+id/reservePlace"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="79dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="8dp"
         android:background="#8BC34A"
         android:fontFamily="serif"
         android:text="@string/spaces"
@@ -25,7 +25,6 @@
         android:textSize="36sp"
         android:textStyle="bold" />
 
-
     <Button
         android:id="@+id/reservePlace"
         android:layout_width="wrap_content"
@@ -33,7 +32,7 @@
         android:layout_above="@+id/list1"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="141dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginBottom="139dp"
         android:backgroundTint="#D8C51F"
         android:text="@string/reserve_place"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -43,12 +42,12 @@
 
     <TextView
         android:id="@+id/list1"
-        android:layout_width="233dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/list"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="88dp"
-        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="3dp"
         android:gravity="center"
         android:padding="10dp"
         android:text="@string/list_with_added_plates"
@@ -64,8 +63,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="14dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="147dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="22dp"
         android:background="#3E00838F"
         android:choiceMode="multipleChoice">
 
