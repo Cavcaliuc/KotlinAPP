@@ -5,8 +5,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication.admin.view.LoginView
 import com.example.myapplication.common.SharedPref
-import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         val admin = findViewById<Button>(R.id.admin1)
         admin.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, LoginView::class.java)
 
             startActivity(intent)
         }

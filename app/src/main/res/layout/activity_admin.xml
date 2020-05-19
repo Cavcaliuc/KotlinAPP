@@ -49,11 +49,12 @@
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="207dp"
-        android:layout_below="@+id/searchFilter"
-        android:layout_marginTop="14dp"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="3dp"
         android:choiceMode="multipleChoice">
 
     </ListView>
+
     <Button
         android:id="@+id/addAccount"
         android:layout_width="103dp"

@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 
 data class AddUserCar(
     @SerializedName("data")
-    val `data`: Data,
+    val `data`: UserCarData,
     @SerializedName("success")
     val success: Boolean
 )

@@ -16,11 +16,12 @@
         <activity android:name=".PageUser_Logged_Activity" />
         <activity android:name=".AccountActivity" />
         <activity android:name=".PlateActivity" />
-        <activity android:name=".AddPlateActivity" />
+        <activity android:name=".admin.view.AddPlateView" />
         <activity android:name=".UserActivity" />
-        <activity android:name=".SignUPActivity" />
-        <activity android:name=".AdminActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".admin.view.AddAccountView" />
+        <activity android:name=".admin.view.AccountDetailsView" />
+        <activity android:name=".admin.view.MainView" />
+        <activity android:name=".admin.view.LoginView" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

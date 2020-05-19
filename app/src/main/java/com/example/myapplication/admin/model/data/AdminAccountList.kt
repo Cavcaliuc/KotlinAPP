@@ -1,11 +1,11 @@
-package com.example.myapplication.admin.model
+package com.example.myapplication.admin.model.data
 
 
 import com.google.gson.annotations.SerializedName
 
-data class adminAccountList(
+data class AdminAccountList(
     @SerializedName("data")
-    val `data`: List<Data>,
+    val `data`: List<ListData>,
     @SerializedName("success")
     val success: Boolean
 )

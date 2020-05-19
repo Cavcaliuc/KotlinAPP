@@ -3,7 +3,7 @@ package com.example.myapplication.admin.model.data
 
 import com.google.gson.annotations.SerializedName
 
-data class Data(
+data class UserCarData(
     @SerializedName("brand")
     val brand: String,
     @SerializedName("color")

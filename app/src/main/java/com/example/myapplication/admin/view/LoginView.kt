@@ -6,46 +6,39 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.R
+import com.example.myapplication.admin.viewmodel.LoginViewModel
 import com.example.myapplication.common.SharedPref
 import com.example.myapplication.services.ServiceController
 import com.example.myapplication.services.request.LoginRequest
 import com.example.myapplication.services.response.LoginResponse
+import kotlinx.android.synthetic.main.activity_login.*
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
 
-class LoginViewActivity : AppCompatActivity() {
+class LoginView : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-
-        var email = findViewById<EditText>(R.id.editEmail)
-        var pass = findViewById<EditText>(R.id.editPass)
-        val loginButton = findViewById<Button>(R.id.buttonLog)
-
         //observe view model
-        loginviewmodel = ViewModelProvider(this).get(LoginViewModel0::class.java)
-        loginviewmodel.userDetails.observe(this, Observer {
-            val id = it
-            val intent = Intent(this, LoginActivity1::class.java)
-            intent.putExtra("azureId", id)
+        val loginviewmodel = ViewModelProvider(this).get(LoginViewModel::class.java)
+        loginviewmodel.loginDetails.observe(this, Observer {
+            val token = it.token
+            val intent = Intent(this, MainView::class.java)
+            intent.putExtra("token", token)
             startActivity(intent)
         })
 
-        loginButton.setOnClickListener {
-            val data = LoginRequest()
-            data.email = email.text.toString()
-            data.password = pass.text.toString()
-            ServiceController.login(data)
+        buttonLog.setOnClickListener {
+            val email = editEmail.text.toString()
+            val password = editPass.text.toString()
+            loginviewmodel.login(email, password)
         }
     }
-
-
-
-    fun onClick(view: View) {}
 }
 
