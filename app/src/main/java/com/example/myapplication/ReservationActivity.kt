@@ -9,7 +9,7 @@ class ReservationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_rezervation)
+        setContentView(R.layout.activity_reservation)
 
 
     }
