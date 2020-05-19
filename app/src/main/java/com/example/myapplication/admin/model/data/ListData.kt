@@ -1,0 +1,13 @@
+package com.example.myapplication.admin.model.data
+
+
+import com.google.gson.annotations.SerializedName
+
+data class Data(
+    @SerializedName("email")
+    val email: String,
+    @SerializedName("id")
+    val id: Int,
+    @SerializedName("type")
+    val type: String
+)
