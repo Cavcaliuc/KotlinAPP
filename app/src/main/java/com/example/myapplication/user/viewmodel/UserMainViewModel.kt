@@ -9,15 +9,15 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class UserMainViewModel : ViewModel() {
-    val platesTokDetails = MutableLiveData<PlateData>()
+    val platesTokDetails = MutableLiveData<List<PlateData>>()
 
-    fun login(email: String, password: String) {
+    fun getPlatesTok(token: String) {
         viewModelScope.launch(Dispatchers.Default) {
             kotlin.runCatching {
-                ApiImpl().login(token)
+                ApiImpl().getPlateDetailsTok(token)
             }.onSuccess {
                 if(it.success){
-                    loginDetails.postValue(it.data)
+                    platesTokDetails.postValue(it.data)
                 }
             }.onFailure {
                 it.printStackTrace()
