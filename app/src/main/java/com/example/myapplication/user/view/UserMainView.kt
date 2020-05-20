@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.myapplication.ConfirmationWebSocket
 import com.example.myapplication.R
 import com.example.myapplication.ReservationActivity
+import com.example.myapplication.UiPlacesWebSocket
 import com.example.myapplication.common.SharedPref
 import com.example.myapplication.user.viewmodel.UserMainViewModel
 import kotlinx.android.synthetic.main.activity_user_main.*
@@ -17,11 +18,11 @@ import kotlinx.android.synthetic.main.activity_user_main.*
 
 class UserMainView : AppCompatActivity() {
     private var socket: ConfirmationWebSocket? = null
+    private var uiplaces: UiPlacesWebSocket? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_main)
-
 
         //observe view model
         val usermainviewmodel = ViewModelProvider(this).get(UserMainViewModel::class.java)
@@ -48,5 +49,6 @@ class UserMainView : AppCompatActivity() {
 
 
         socket = ConfirmationWebSocket(this)
+        uiplaces = UiPlacesWebSocket(this)
     }
 }

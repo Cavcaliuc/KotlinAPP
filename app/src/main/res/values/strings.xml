@@ -26,7 +26,7 @@
     <string name="click_up_to_edit">Click to edit</string>
     <string name="delete_plate">DELETE PLATE</string>
     <string name="details_technical_passport">DETAILS (TECHNICAL PASSPORT…)</string>
-    <string name="spaces">0/100\nSpaces</string>
+    <string name="spaces">...</string>
     <string name="reserve_place">reserve Place</string>
     <string name="list_with_added_plates">List With Added Plates</string>
     <string name="reserve">Reserve</string>
